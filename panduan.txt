@@ -1,0 +1,19 @@
+Pastikan Anda memiliki folder app, mysql, dan nginx di direktori yang sama dengan docker-compose.yml.
+Folder app berisi file PHP Anda, 
+sedangkan folder mysql berisi data MariaDB Anda. 
+Folder nginx berisi file konfigurasi Nginx Anda.
+Anda dapat menjalankan docker-compose up -d untuk memulai layanan.
+Anda dapat mengakses Adminer pada http://localhost:8080.
+
+server = db
+user = myuser
+pass = mypassword
+db = mydb
+
+server = db
+user = root
+pass = root 
+db = kosongkan
+
+untuk down docker 
+docker-compose down --volume
